@@ -25,7 +25,7 @@
             </tr>
             <tr>
                 <td><label>Details</label></td>
-                <td><form:input path="details"/></td>
+                <td><form:textarea path="details"/></td>
             </tr>
             <tr>
                 <td>
