@@ -16,9 +16,10 @@ public class TodoData {
         this.add(new TodoItem("first title", "first details", LocalDate.now()));
         this.add(new TodoItem("second title", "second details", LocalDate.now()));
         this.add(new TodoItem("third title", "third details", LocalDate.now()));
+        this.add(new TodoItem("4rd title", "4rd details", LocalDate.now()));
     }
 
-    public List<TodoItem> getAll() {
+    public List<TodoItem> getItems() {
         return Collections.unmodifiableList(this.items);
     }
 
@@ -35,7 +36,7 @@ public class TodoData {
                 .orElse(null);
     }
 
-    public void update(@NonNull TodoItem updated){
+    public void update(@NonNull TodoItem updated) {
         ListIterator<TodoItem> iterator = this.items.listIterator();
         while (iterator.hasNext()) {
             TodoItem next = iterator.next();
