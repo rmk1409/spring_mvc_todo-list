@@ -11,6 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-    JSP welcome page.
+    <h1>JSP welcome page.</h1>
+    Hello, ${user}
+    <h2>${welcomeMessage}</h2>
 </body>
 </html>
