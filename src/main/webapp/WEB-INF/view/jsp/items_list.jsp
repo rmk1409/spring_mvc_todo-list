@@ -14,15 +14,20 @@
         <tr>
             <th>Title</th>
             <th>Deadline</th>
+            <th>Edit</th>
             <th>Delete</th>
         </tr>
         <c:forEach var="item" items="${todoData.items}">
+            <c:url var="editUrl" value="${Mappings.ADD_ITEM}">
+                <c:param name="id" value="${item.id}"/>
+            </c:url>
             <c:url var="deleteUrl" value="${Mappings.DELETE_ITEM}">
                 <c:param name="id" value="${item.id}"/>
             </c:url>
             <tr>
                 <td>${item.title}</td>
                 <td>${item.deadline}</td>
+                <td><a href="${editUrl}">Edit</a></td>
                 <td><a href="${deleteUrl}">Delete</a></td>
             </tr>
         </c:forEach>
