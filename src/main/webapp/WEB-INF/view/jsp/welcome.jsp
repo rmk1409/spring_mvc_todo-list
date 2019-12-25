@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>JSP welcome page.</h1>
-    Hello, ${user}
+    <h2>${helloMsg}</h2>
     <h2>${welcomeMessage}</h2>
 </body>
 </html>
